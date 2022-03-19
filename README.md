@@ -1,9 +1,9 @@
 # Auton-Abstraction
 
-###These files contain modules of varying levels of complexity to build 4886T's autonomous abstraction from tipping point.
+### These files contain modules of varying levels of complexity to build 4886T's autonomous abstraction from tipping point.
 
 
-######Setup
+###### Setup
 Download the files and reconfigure your motors to the ports they're plugged in. You need at least DriveLB and DriveRB, and if you have 4 or 6 motors on your drive you can also reconfigure DriveLM, DriveLF, DriveRM, and DriveRF. The motors' direction is configured as though the motor drives a pinion driving the wheel - the motor spins in the opposite direction as the wheel. If your motors spin in the same direction as the wheel, such as direct drive or chain drive, you will need to flip the "reversed" slider on all of them. If your gearboxes are 200rpm or 100rpm, you will also need to change that.
 
 You will also need a vex inertial sensor for modules 4-6.
@@ -12,25 +12,25 @@ In the "robot-specific-defs.h" file are a number of values specific to each robo
 
 DRIVE_KP and STEERING_KP are PID constants that will want to be fine tuned for optimal performance, but should run decently without adjustment on most bots.
 
-####The modules introduce the following topics and build on the previous:
+### The modules introduce the following topics and build on the previous:
 
-######Module 0:
+###### Module 0:
 Most basic, "Drive forward a certain number of degrees then stop"
 
-######Module 1:
+###### Module 1:
 Friendly units (inches, seconds), following a target
 
-######Module 2:
+###### Module 2:
 Acceleration and deceleration, driving backward
 
-######Module 3:
+###### Module 3:
 Using the inertial sensor, wrap detection and unwrapping
 
-######Module 4:
+###### Module 4:
 Turning and arcing at a given radius
 
-######Module 5:
+###### Module 5:
 Turning and arcing in reverse
 
-######Module 6:
+###### Module 6:
 Correcting steering while driving straight.
